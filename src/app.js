@@ -20,7 +20,7 @@ async function app () {
   // express error handler
   app.use(errorMw)
 
-  return app.listen(3061)
+  return app.listen(process.env.PORT || 3061)
 }
 
 export default app
