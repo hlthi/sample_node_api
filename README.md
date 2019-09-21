@@ -14,7 +14,7 @@ heroku ps:scale web=1
 ```
 
 
-#local
+# local
 This project developed with Nodejs v12.10.0 for using latest node features.
 ```
 # ensure install same version
@@ -48,7 +48,7 @@ curl --request POST \
 
 ```
 
-#test
+# test
 Make sure you do everything written above (LOCAL)
 
 ```
