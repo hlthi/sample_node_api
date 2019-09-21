@@ -14,7 +14,7 @@ async function app () {
   // For each request, parse request body into a JavaScript object where header Content-Type is application/json
   app.use(bodyParser.json())
 
-  // news router (secured)
+  app.get('/', (req, res) => { res.send('Please read doc, <a href="https://github.com/hlthi/sample_node_api">GITHUB REPO</a>') })
   app.post('/', mainMw)
 
   // express error handler
