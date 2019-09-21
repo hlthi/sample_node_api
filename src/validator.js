@@ -1,13 +1,13 @@
 import Joi from '@hapi/joi'
 
 const schema = Joi.object({
-  startDate: Joi.date().iso(),
+  startDate: Joi.date().iso().required(),
 
-  endDate: Joi.date().iso(),
+  endDate: Joi.date().iso().required(),
 
-  minCount: Joi.number(),
+  minCount: Joi.number().required(),
 
-  maxCount: Joi.number()
+  maxCount: Joi.number().required()
 })
 
 export default schema
