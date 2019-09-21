@@ -9,6 +9,10 @@
     "start": "node --experimental-modules src/index.js",
     "test": "jest --detectOpenHandles"
   },
+  "engines": {
+    "node": "12.10.0",
+    "yarn" : "1.17.3"
+  },
   "dependencies": {
     "@hapi/boom": "^7.4.9",
     "@hapi/joi": "^16.1.4",

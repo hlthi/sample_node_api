@@ -131,9 +131,9 @@ describe('Integration', () => {
 
 // a helper function to make a POST request.
 async function post (path, body) {
-  const httpRequest = request('http://localhost:3061').post(`${path}`)
+  const httpRequest = request(`http://localhost:${process.env.PORT || 3061}`).post(`${path}`)
   httpRequest.send(body)
   httpRequest.set('Accept', 'application/json')
-  httpRequest.set('Origin', 'http://localhost:3061')
+  httpRequest.set('Origin', `http://localhost:${process.env.PORT || 3061}`)
   return httpRequest
 }
