@@ -29,11 +29,13 @@ async function mainMw (req, res, next) {
       { $project: { _id: 0 } } // i dont need id in result
     ])
     .then(data => {
+      // prepare result
       const result = new ResultModel()
       result.success(data)
       res.send(result)
     })
     .catch(e => {
+      // oops error
       next(Boom.internal('Internal error.'))
     })
 }

@@ -1,6 +1,6 @@
 import start from './app.js'
 /**
- * Start and handle error
+ * Could be a logger library on a real system
  */
 start().catch(e => {
   console.log(e)

@@ -55,3 +55,31 @@ Make sure you do everything written above (LOCAL)
 yarn test
 ```
 
+# Features
+- Code formatting -> prettier ,  eslint
+- Test -> Jest , Supertest
+- Validation -> @hapi/joi
+- Error messages -> @hapi/boom
+
+# Thoughts
+- Some systems return 200 in each case. 
+Some systems return 200 in each case. 
+I think it is against the HTTP code determined by years of experience.
+
+# File Tree
+```
+.src
+├── ResultModel.js      --> Prepare result body
+├── app.js              --> start server
+├── db.js               --> prepare the database
+├── error-mw.js         --> main error middleware
+├── index.js            --> starting point of the program
+├── main-mw.js          --> main post middleware
+├── test            
+│   ├── db.test.js      --> test db
+│   └── main.test.js    --> integration test
+└── validator.js        --> request validation
+```
+
+# Notes
+- babel.config.js using for jest
