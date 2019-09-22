@@ -15,7 +15,7 @@ heroku ps:scale web=1
 
 # fast test with heroku
 https://calm-badlands-49165.herokuapp.com/
-- Heroku app can sleep, please deploy yourself
+- Heroku app can sleep, test now or please deploy yourself
 ```
 curl --request POST \
   --url https://calm-badlands-49165.herokuapp.com/ \
