@@ -93,9 +93,10 @@ I think it is against the HTTP code determined by years of experience.
 ├── main-mw.js          --> main post middleware
 ├── test            
 │   ├── db.test.js      --> test db
-│   └── main.test.js    --> integration test
+│   └── app.test.js     --> integration test
 └── validator.js        --> request validation
 ```
 
 # Notes
+- read app.test.js to see all error messages
 - babel.config.js using for jest
