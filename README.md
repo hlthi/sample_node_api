@@ -13,9 +13,25 @@ git push heroku master
 heroku ps:scale web=1
 ```
 
+# fast test with heroku
+https://calm-badlands-49165.herokuapp.com/
+- Heroku app can sleep, please deploy yourself
+```
+curl --request POST \
+  --url https://calm-badlands-49165.herokuapp.com/ \
+  --header 'content-type: application/json' \
+  --data '{
+        "startDate": "2017-01-26",
+        "endDate": "2018-02-02",
+        "minCount": 2700,
+        "maxCount": 3000
+}'
+```
+
 
 # local
 This project developed with Nodejs v12.10.0 for using latest node features.
+Default port is **3061** or you can define port with process.env.PORT.
 ```
 # ensure install same version
 nvm install v12.10.0
