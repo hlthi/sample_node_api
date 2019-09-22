@@ -16,7 +16,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(0)
     expect(res.body.msg).toBe('Success')
-    expect(res.body.results.length === 0).toBe(false)
+    expect(res.body.records.length === 0).toBe(false)
     done()
   })
 
@@ -30,7 +30,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(400)
     expect(res.body.msg).toBe('"startDate" must be in ISO 8601 date format')
-    expect(res.body.results.length === 0).toBe(true)
+    expect(res.body.records.length === 0).toBe(true)
     done()
   })
 
@@ -44,7 +44,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(400)
     expect(res.body.msg).toBe('"endDate" must be in ISO 8601 date format')
-    expect(res.body.results.length === 0).toBe(true)
+    expect(res.body.records.length === 0).toBe(true)
     done()
   })
 
@@ -58,7 +58,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(400)
     expect(res.body.msg).toBe('"minCount" must be a number')
-    expect(res.body.results.length === 0).toBe(true)
+    expect(res.body.records.length === 0).toBe(true)
     done()
   })
 
@@ -72,7 +72,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(400)
     expect(res.body.msg).toBe('"maxCount" must be a number')
-    expect(res.body.results.length === 0).toBe(true)
+    expect(res.body.records.length === 0).toBe(true)
     done()
   })
 
@@ -85,7 +85,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(400)
     expect(res.body.msg).toBe('"startDate" is required')
-    expect(res.body.results.length === 0).toBe(true)
+    expect(res.body.records.length === 0).toBe(true)
     done()
   })
 
@@ -98,7 +98,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(400)
     expect(res.body.msg).toBe('"endDate" is required')
-    expect(res.body.results.length === 0).toBe(true)
+    expect(res.body.records.length === 0).toBe(true)
     done()
   })
 
@@ -111,7 +111,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(400)
     expect(res.body.msg).toBe('"minCount" is required')
-    expect(res.body.results.length === 0).toBe(true)
+    expect(res.body.records.length === 0).toBe(true)
     done()
   })
 
@@ -124,7 +124,7 @@ describe('Integration', () => {
 
     expect(res.body.code).toBe(400)
     expect(res.body.msg).toBe('"maxCount" is required')
-    expect(res.body.results.length === 0).toBe(true)
+    expect(res.body.records.length === 0).toBe(true)
     done()
   })
 })

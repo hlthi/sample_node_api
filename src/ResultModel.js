@@ -2,16 +2,16 @@ class ResultModel {
   constructor () {
     this.code = null
     this.msg = null
-    this.results = []
+    this.records = []
   }
 
   /**
    * Success result
    */
-  success (results) {
+  success (records) {
     this.code = 0
     this.msg = 'Success'
-    this.results = results
+    this.records = records
   }
 
   /**
